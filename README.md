@@ -21,9 +21,13 @@ And then attach YourKit profiler.
 
 However if you use IDEA then you can start YourKit, then from YourKit you can choose Integrate with IDE ... and then chose IDEA and then say ok even if IDEA is also running.
 
-In IDEA you should see a YourKit icon if you right-click on the SampleCamelApplication to run this application, then you can chose that to profile, and it run the app with profiler.
+In IDEA you should see a YourKit icon if you right-click on the SampleCamelApplication to run this application, then you can chose that to profile, and it run the app with profiler (as shown below).
+
+![img/yourkit-1.png]
 
 You then switch to YourKit and you should start see data.
 To check for thread contention, then select the "Monitor Usage" tab, and then click the gear button with the play icon "Start Monitor Profile" which then starts capture data.
+
+![img/yourkit-2.png]
 
 For YourKit you can request a trial license that works for 2 weeks. 
