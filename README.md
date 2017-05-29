@@ -30,4 +30,16 @@ To check for thread contention, then select the "Monitor Usage" tab, and then cl
 
 ![YourKit-2](img/yourkit-2.png?raw=true "YourKit-2")
 
-For YourKit you can request a trial license that works for 2 weeks. 
+You can also pre-configure YourKit to run in different mode. For example to run in _call counting_ mode, you can
+change this in the run dialog. Mind that you should press `apply` button, and then run the application by
+right clicking and chose profile, otherwise the profiler is not started as well. This allows YourKit to run
+in the chosen mode from the beginning. You can change the mode while YourKit is running, but if you want to
+capture details during startup then you need to do as shown in the screenshot below:
+
+![YourKit-3](img/yourkit-3.png?raw=true "YourKit-3")
+
+
+#### YourKit License
+
+For YourKit you can request a trial license that works for 2 weeks.
+ 
