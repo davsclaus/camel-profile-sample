@@ -86,6 +86,12 @@
       <artifactId>camel-stream-starter</artifactId>
     </dependency>
 
+    <!-- use faster map -->
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-headersmap</artifactId>
+    </dependency>
+
     <!-- test -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
