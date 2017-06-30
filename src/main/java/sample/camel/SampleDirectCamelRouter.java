@@ -32,7 +32,8 @@ public class SampleDirectCamelRouter extends RouteBuilder {
     @Override
     public void configure() throws Exception {
         from("timer:bye?period={{timer.period}}")
-            .setBody(simple("${random(1,1000)}"))
+            .setBody(constant("1000"))
+            .setBody(simple("${random(1,${body})}"))
             .to("direct:foo");
 
         from("direct:foo")
