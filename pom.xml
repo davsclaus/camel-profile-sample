@@ -136,5 +136,32 @@
         </plugins>
       </build>
     </profile>
+    <profile>
+      <id>jfr</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>${spring-boot-version}</version>
+            <configuration>
+              <jvmArguments>
+                -XX:+UnlockCommercialFeatures -XX:+FlightRecorder
+              </jvmArguments>
+            </configuration>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>repackage</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
   </profiles>
 </project>
